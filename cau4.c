@@ -1,0 +1,31 @@
+#include <stdio.h>
+void findExtremes(int arr[], int n, int *max, int *min);
+int main() {
+    int data[] = {4, -2, 8, 1, 9, 5};
+    int n = sizeof(data) / sizeof(data[0]);
+    int maxValue, minValue;
+    findExtremes(data, n, &maxValue, &minValue);
+    printf("Mang da cho: ");
+    for(int i = 0; i < n; i++) {
+        printf("%d ", data[i]);
+    }
+    printf("\n");
+
+    printf("Gia tri lon nhat: %d\n", maxValue);
+    printf("Gia tri nho nhat: %d\n", minValue);
+
+    return 0;
+}
+void findExtremes(int arr[], int n, int *max, int *min) {
+    if (n <= 0) return;
+    *max = arr[0];
+    *min = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > *max) {
+            *max = arr[i];
+        }
+        if (arr[i] < *min) {
+            *min = arr[i];
+        }
+    }
+}
