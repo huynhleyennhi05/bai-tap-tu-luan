@@ -15,12 +15,12 @@ int main(void) {
             }
             else
             {
-                printf("\nSo luong \"KHONG HOP LE !!!\", vui long nhap lai!\n");
+                printf("\nSo luong \"KHONG HOP LE !\", vui long nhap lai!\n");
             }
         }
         else
         {
-            printf("\nNhap sai dinh dang !!! Vui long nhap mot so nguyen.\n");
+            printf("\nNhap sai dinh dang ! Vui long nhap mot so nguyen.\n");
         }
 
         while (getchar() != '\n');
@@ -37,7 +37,7 @@ int main(void) {
         }
         else
         {
-            printf("Nhap sai !!! Vui long nhap lai mot so nguyen.\n");
+            printf("Nhap sai ! Vui long nhap lai mot so nguyen.\n");
             while (getchar() != '\n'); // Dọn sạch bộ đệm
         }
     }
